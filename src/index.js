@@ -2,7 +2,7 @@ import express from "express";
 import { configDotenv } from "dotenv";
 import { slack_init,sendSlackMessage } from "./Helper/slack.js";
 
-configDotenv({path:`./.env.${process.env.NODE_ENV || 'development'}` });
+configDotenv({path:`./.env` });
 
 const PORT = process.env.PORT;
 const token = process.env.SLACK_BOT_TOKEN;
