@@ -3,12 +3,14 @@ import { port } from "./Config/env.js";
 import { router as knife } from "./Router/router.knife.js";
 import bodyParser from "body-parser";
 import { Interactions } from "./Helper/Interactions.js";
+import { router as vpn } from "./Router/router.vpn.js";
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public')); 
 app.use('/knife',knife);
+app.use('/vpn',vpn);
 
 app.post("/show-boobs",(req, res) => {
   console.log("Slash command received:", req.body);
