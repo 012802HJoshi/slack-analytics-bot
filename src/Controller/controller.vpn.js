@@ -12,12 +12,12 @@ export const vpnConnect = (req,res)=>{
       {
          "cat_id":"1",
          "cat_name":"Animal",
-         "thumnail_img":"img/tinified/thumb/animal.png",
+         "thumnail_img":"img/tinified/thumb/animal_thumb.jpg",
          "premium":"N",
          "rintones_count":"15",
          "updated":"2022-01-05T12:15:00Z",
          "likes":"25",
-         "banner_image":"img/tinified/animal 20potrait.png"
+         "banner_image":"img/tinified/animal_banner.jpg"
       },
       {
          "cat_id":"2",
